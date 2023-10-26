@@ -1,0 +1,574 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul,
+li,
+ol{
+list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+    cursor: default;
+}
+p,
+span{
+    cursor: default;
+}
+input, select{
+    cursor: pointer;
+}
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 24px;
+    
+    font-family: 'Jost', sans-serif;
+    color: #FFF;
+}
+button{
+    cursor: pointer;
+}
+.wrapper{
+ 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
+footer{
+    flex: 0 0 auto;
+}
+/* layout */
+
+/* header */
+.header{
+    background: #141024;
+}
+.header__box{
+    margin-bottom: 85px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.navBar a{
+    margin: 0 40px;
+    color: #FFF;
+text-align: center;
+font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+transition: all 0.5s ease 0s;
+}
+.navBar a:hover{
+    opacity: 0.8;
+}
+.number{
+color: #FFF;
+text-align: right;
+font-family: Jost;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 48px */
+}
+
+/*main*/
+.homePageLeft h2{
+    color: #FFF;
+font-family: Jost;
+font-size: 70px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 112px */
+}
+.homePageLeft p {
+    width: 478px;
+    color: #FFF;
+font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+.HomePageButton{
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    border-radius: 5px;
+    background: #D52027;
+    padding: 25px 54px;
+    transition: all 0.8s ease 0s;
+}
+.HomePageButton:hover{
+    background: #999999;
+}
+.mainHomePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homePageLeft{
+    margin-right: 28px;
+}
+
+/* aboutSite */
+.mainWrapper{
+    margin-left: 380px;
+}
+.aboutSite{
+    position: relative;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #141024;
+    margin: 120px 0 120px 0;
+}
+.aboutSiteTop{
+    color: #141024;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 891px;
+    margin-bottom: 60px;
+}
+.aboutSiteTop b {
+    color: #141024;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 48px */
+}
+.aboutSiteBotton{
+    display: flex;
+    align-items: center;
+}
+.aboutSiteBotton b{
+    color: #D52027;
+
+    font-family: Jost;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 112px */
+}
+.aboutSiteBotton p{
+    color: rgba(20, 16, 36, 0.70);
+
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    width: 260px;
+    margin-right: 40px;
+}
+/* mainGet */
+.mainGet{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #141024;
+    margin: 100px 0 100px 0;
+}
+.mainGetTop{
+    color: #141024;
+
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 80px */
+    margin-bottom: 60px;
+}
+.mainGetBottom{
+    display: flex;
+    align-items: center;
+}
+.boxInfoGet{
+    width: 360px;
+    margin-right: 40px;
+}
+.boxInfoGet b{
+    color: #141024;
+
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 38.4px */
+}
+.boxInfoGet p{
+    color: rgba(20, 16, 36, 0.70);
+
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    margin-top: 20px;
+    
+}
+.popupGet{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.popupGet button{
+    position: absolute;
+    background-color: #FFF;
+    left: 30%;
+    top: 0;
+}
+.popupContainer{
+    position: relative;
+    display: none;
+            left: 0;
+            top: -65px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+}
+.close-btn{
+    position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+}
+.popupContent{
+    border-radius: 5px;
+    background: #FFF;
+
+    box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.10);
+    padding: 15px 20px;
+}
+.popupContent p{
+    color: #141024;
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    margin-top: 0;
+}
+/* MainTrainer */
+.mainTrainer{
+    color: #141024;
+    margin: 120px 0;
+}
+.mainTrainer h2{
+    color: #141024;
+
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 80px */
+    margin-bottom: 60px;
+}
+.sliderBox{
+    display: flex;
+}
+.boxInfoSlider{
+    margin-right: 40px;
+}
+.img img{
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+}
+.aboutTrainer b {
+    color: #141024;
+
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 38.4px */
+    margin-bottom: 10px;
+}
+.aboutTrainer p {
+    color: rgba(20, 16, 36, 0.70);
+
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    margin-bottom: 20px;
+}
+.aboutTrainer a {
+    color: #D52027;
+
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    transition: all 0.8s ease 0s;
+}
+.aboutTrainer a:hover{
+    color: #999999;
+}
+/* mainRate */
+.mainRate{
+    margin: 120px 0;
+    color: #141024;
+}
+.mainRateTop h2{
+    color: #141024;
+
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 80px */
+    margin-bottom: 60px;
+}
+.mainRateBottom{
+    display: flex;
+    align-items: center;
+}
+.mainRateBox{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 16, 36, 0.20);
+    margin-right: 40px;
+    width: 360px;
+    height: 460px;
+    transition: all 0.5s ease 0s;
+}
+.mainRateBox:hover{
+    background: #141024;
+    height: 500px;
+
+}
+.mainRateBox h3{
+    color: #141024;
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 48px */
+    margin-bottom: 63px;
+    transition: all 0.5s ease 0.3s;
+}
+.mainRateBox:hover h3{
+    color: #FFF;
+}
+.mainRateBox b{
+    color: #141024;
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.5s ease 0.3s;
+}
+.mainRateBox:hover b{
+    color: #FFF;
+}
+.mainRateBottom p {
+    color: #141024;
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    width: 250px;
+    margin-bottom: 60px;
+    transition: all 0.5s ease 0.3s;
+}
+.mainRateBox:hover p{
+    color: #FFF;
+}
+
+/* Footer */
+.footerTop{
+    background: #D52027;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerTopImg{
+    z-index: 0;
+    position: absolute;
+}
+.footerTopImg img{
+    width: 1880px;
+}
+.footerRight{
+    position: relative;
+    z-index: 1;
+}
+.footerLeft{
+    width: 476px;
+}
+.footerLeft b{
+    color: #FFF;
+
+    font-family: Jost;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 46.8px */
+
+
+}
+.footerLeft p{
+    color: #FFF;
+
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    margin-top: 20px;
+}
+.foooterRightBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 64px;
+}
+.foooterRightBox input{
+    padding: 20px;
+    width: 500px;
+    height: 64px;
+    border-radius: 5px;
+    background: #F6F6F6;
+    margin-bottom: 10px;
+
+    color: rgba(40, 41, 68, 0.70);
+
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.foooterRightBox button{
+    color: #FFF;
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+    border-radius: 5px;
+    background: #141024;
+    width: 100%;
+    transition: all 0.8s ease 0s;
+}
+.foooterRightBox button:hover{
+    background: #999999;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background: #141024;
+}
+.footerBottomLeft p{
+    color: #FFF;
+
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 48px */
+}
+.footerBottomLeft span{
+    color: rgba(255, 255, 255, 0.70);
+
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
+.footerBottomRight a {
+    color: #FFF;
+
+    text-align: right;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 48px */
+}
+.swiper-scrollbar{
+    left: 0;
+    bottom: 0;
+    width: 360px !important;
+}
+.swiper-scrollbar-drag{
+    width: 260px !important;
+    background: #141024;
+    left: 0;
+    bottom: 0;
+}
+.mainTrainerBottom{
+    position: relative;
+}
